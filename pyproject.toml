@@ -10,6 +10,7 @@ crewai = "^0.11.0"
 unstructured = '==0.10.25'
 pyowm = '3.3.0'
 tools = "^0.1.9"
+faiss-cpu = "1.8.0.post1"
 wikipedia = "1.4.0"
 yfinance = "0.2.35"
 sec-api = "1.0.17"
