@@ -4,8 +4,8 @@ from langchain_openai import ChatOpenAI
 from decouple import config
 
 from textwrap import dedent
-from agents import CustomAgents
-from tasks import CustomTasks
+from stock_analysis_agents import CustomAgents
+from stock_analysis_tasks import CustomTasks
 
 # Install duckduckgo-search for this example:
 # !pip install -U duckduckgo-search
