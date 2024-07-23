@@ -1,36 +1,66 @@
 from crewai import Agent
-from textwrap import dedent
-from langchain.llms import OpenAI, Ollama
-from langchain_openai import ChatOpenAI
 
+from tools.browser_tools import BrowserTools
+from tools.calculator_tools import CalculatorTools
+from tools.search_tools import SearchTools
+from tools.sec_tools import SECTools
 
-# This is an example of how to define custom agents.
-# You can define as many agents as you want.
-# You can also define custom tasks in tasks.py
-class CustomAgents:
-    def __init__(self):
-        self.OpenAIGPT35 = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.7)
-        self.OpenAIGPT4 = ChatOpenAI(model_name="gpt-4", temperature=0.7)
-        self.Ollama = Ollama(model="openhermes")
+from langchain.tools.yahoo_finance_news import YahooFinanceNewsTool
 
-    def agent_1_name(self):
-        return Agent(
-            role="Define agent 1 role here",
-            backstory=dedent(f"""Define agent 1 backstory here"""),
-            goal=dedent(f"""Define agent 1 goal here"""),
-            # tools=[tool_1, tool_2],
-            allow_delegation=False,
-            verbose=True,
-            llm=self.OpenAIGPT35,
-        )
+class StockAnalysisAgents():
+  def financial_analyst(self):
+    return Agent(
+      role='The Best Financial Analyst',
+      goal="""Impress all customers with your financial data 
+      and market trends analysis""",
+      backstory="""The most seasoned financial analyst with 
+      lots of expertise in stock market analysis and investment
+      strategies that is working for a super important customer.""",
+      verbose=True,
+      tools=[
+        BrowserTools.scrape_and_summarize_website,
+        SearchTools.search_internet,
+        CalculatorTools.calculate,
+        SECTools.search_10q,
+        SECTools.search_10k
+      ]
+    )
 
-    def agent_2_name(self):
-        return Agent(
-            role="Define agent 2 role here",
-            backstory=dedent(f"""Define agent 2 backstory here"""),
-            goal=dedent(f"""Define agent 2 goal here"""),
-            # tools=[tool_1, tool_2],
-            allow_delegation=False,
-            verbose=True,
-            llm=self.OpenAIGPT35,
-        )
+  def research_analyst(self):
+    return Agent(
+      role='Staff Research Analyst',
+      goal="""Being the best at gather, interpret data and amaze
+      your customer with it""",
+      backstory="""Known as the BEST research analyst, you're
+      skilled in sifting through news, company announcements, 
+      and market sentiments. Now you're working on a super 
+      important customer""",
+      verbose=True,
+      tools=[
+        BrowserTools.scrape_and_summarize_website,
+        SearchTools.search_internet,
+        SearchTools.search_news,
+        YahooFinanceNewsTool(),
+        SECTools.search_10q,
+        SECTools.search_10k
+      ]
+  )
+
+  def investment_advisor(self):
+    return Agent(
+      role='Private Investment Advisor',
+      goal="""Impress your customers with full analyses over stocks
+      and completer investment recommendations""",
+      backstory="""You're the most experienced investment advisor
+      and you combine various analytical insights to formulate
+      strategic investment advice. You are now working for
+      a super important customer you need to impress.""",
+      verbose=True,
+      tools=[
+        BrowserTools.scrape_and_summarize_website,
+        SearchTools.search_internet,
+        SearchTools.search_news,
+        CalculatorTools.calculate,
+        YahooFinanceNewsTool()
+      ]
+    )
