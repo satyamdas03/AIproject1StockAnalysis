@@ -1,15 +1,19 @@
+import os
+from dotenv import load_dotenv
 from crewai import Agent
-
 from tools.browser_tools import BrowserTools
 from tools.calculator_tools import CalculatorTools
 from tools.search_tools import SearchTools
 from tools.sec_tools import SECTools
-
 from langchain.tools.yahoo_finance_news import YahooFinanceNewsTool
 
-#add the api keys here..
+# Load environment variables from .env file
+load_dotenv()
 
-class StockAnalysisAgents():
+# Add your API key here, if necessary
+# api_key = os.getenv("YOUR_API_KEY")
+
+class StockAnalysisAgents:
     def financial_analyst(self):
         return Agent(
             role='The Best Financial Analyst',
@@ -52,7 +56,7 @@ class StockAnalysisAgents():
         return Agent(
             role='Private Investment Advisor',
             goal="""Impress your customers with full analyses over stocks
-            and completer investment recommendations""",
+            and complete investment recommendations""",
             backstory="""You're the most experienced investment advisor
             and you combine various analytical insights to formulate
             strategic investment advice. You are now working for
@@ -68,9 +72,12 @@ class StockAnalysisAgents():
         )
 
 # Example usage
-agents = StockAnalysisAgents()
-financial_analyst_agent = agents.financial_analyst()
-research_analyst_agent = agents.research_analyst()
-investment_advisor_agent = agents.investment_advisor()
+if __name__ == "__main__":
+    agents = StockAnalysisAgents()
+    financial_analyst_agent = agents.financial_analyst()
+    research_analyst_agent = agents.research_analyst()
+    investment_advisor_agent = agents.investment_advisor()
 
-# Now you can use the agents as needed
+    # Now you can use the agents as needed
+    # Example: print details of the financial analyst agent
+    print(financial_analyst_agent)
