@@ -7,6 +7,8 @@ from tools.sec_tools import SECTools
 
 from langchain.tools.yahoo_finance_news import YahooFinanceNewsTool
 
+#add the api keys here..
+
 class StockAnalysisAgents():
     def financial_analyst(self):
         return Agent(
