@@ -1,0 +1,79 @@
+steps:
+1) setting up the environment 
+    --> we are going to setup our pyproject.toml this is basically going to turn all the requirements of our project into code
+    so that we can just run our install script basically to package and build all the necessary dependencies to run our python application
+    
+    --> we are gonna have to install poetry  ==> pipx install poetry
+    --> before installing poetry, we are gonna need to install pipx ==> use : py -m pip install --user pipx
+    --> we have to create our own pyproject.toml file
+        --> there are 2 key components that needed to be set up first one is "tool.poetry" in which we need to define the core components such as the "name", "description"
+        --> the other one is the dependencies where we are going to specifically call out which package conversions we need to set up crew
+        all of the necessary stuff is written in the project.toml file
+        -->tool.pyright is going to allow us to check python codes for type errors
+        -->tool.ruff is going to check for errors and also styling issues
+        -->build-system is going to poetry version 
+
+2) next step is to open up the terminal and do "poetry install --no-root"
+
+3) poetry env list --> to check the currently used Python version for your Poetry environment with
+
+4) poetry shell --> enter into the poetry environment  
+        # after this we will have a python environment in which we can work in
+    
+After this we can start working on the agents
+
+
+Cheat Sheet to Make a Good Agent
+    Begin with the end in mind: Identify the specific outcome your tasks are aiming to achieve.
+    Break down the outcome into actionable tasks: Assign each task to the appropriate agent.
+    Ensure the tasks are descriptive: Provide clear instructions and expected deliverables.
+Goal:
+    Develop a comprehensive stock analysis report that includes trend analysis, predictions, and investment recommendations.
+Captain/Manager/Boss:
+    Expert Stock Analyst
+Employees/Experts to Hire:
+    Data Collection Specialist
+Data Cleaning Expert
+    Data Visualization Expert
+Prediction Model Specialist
+    Investment Advisor
+Notes:
+    Agents should be results-driven and have a clear goal in mind.
+Role: Their job title.
+Goals: Should be actionable.
+Backstory: Should be their resume.
+Agents and Their Responsibilities:
+    Expert Stock Analyst
+
+Role: Oversees the entire stock analysis project.
+Goal: Ensure the final report is accurate, comprehensive, and actionable.
+Backstory: Experienced stock analyst with a background in financial markets and data analysis.
+Data Collection Specialist
+
+Role: Collects relevant stock data from various sources.
+Goal: Gather comprehensive and accurate data for analysis.
+Backstory: Proficient in web scraping, API usage, and data gathering techniques.
+Data Cleaning Expert
+
+Role: Cleans and preprocesses the collected data.
+Goal: Ensure the data is clean, consistent, and ready for analysis.
+Backstory: Experienced in data cleaning and preprocessing with strong attention to detail.
+Data Visualization Expert
+
+Role: Creates visual representations of the data.
+Goal: Develop insightful charts and graphs to visualize trends and patterns.
+Backstory: Skilled in data visualization tools like Matplotlib, Seaborn, and Plotly.
+Prediction Model Specialist
+
+Role: Builds and trains predictive models.
+Goal: Develop accurate models to predict stock trends and prices.
+Backstory: Proficient in machine learning and statistical modeling techniques.
+Investment Advisor
+
+Role: Provides investment recommendations based on analysis.
+Goal: Offer actionable investment advice to maximize returns.
+Backstory: Experienced financial advisor with a deep understanding of stock markets and investment strategies.
+Tools for the Agents
+Folder: tools
+search_tools.py: Implements tools for searching and retrieving data from various sources.
+calculator_tools.py: Implements tools for performing financial calculations and statistical analysis.
