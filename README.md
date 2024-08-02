@@ -98,7 +98,7 @@ Develop a comprehensive stock analysis report that includes trend analysis, pred
 
 **Role**: Provides investment recommendations based on analysis.
 - **Goal**: Offer actionable investment advice to maximize returns.
-- **Backstory**: Experienced financial advisor with a deep understanding of stock markets and investment strategies.
+- **Backstory**: Experienced financial advisor with a deep understanding of stock markets and investment strategies. f
 
 
 
