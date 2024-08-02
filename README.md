@@ -34,3 +34,20 @@ Open the terminal and run:
 poetry install --no-root
 ```
 
+### Step 3: Check Python Version
+
+Check the currently used Python version for your Poetry environment:
+```sh
+poetry env list
+```
+
+### Step 4: Enter Poetry Environment
+
+Enter into the Poetry environment:
+```sh
+poetry shell
+```
+
+After this, you will have a Python environment in which you can work.
+
+
