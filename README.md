@@ -51,3 +51,23 @@ poetry shell
 After this, you will have a Python environment in which you can work.
 
 
+## Cheat Sheet to Make a Good Agent
+### General Guidelines
+-**Begin with the end in mind**:  Identify the specific outcome your tasks are aiming to achieve.
+-**Break down the outcome into actionable tasks**:  Assign each task to the appropriate agent.
+-**Ensure the tasks are descriptive**: Provide clear instructions and expected deliverables.
+
+### Project Goal
+Develop a comprehensive stock analysis report that includes trend analysis, predictions, and investment recommendations.
+
+### Key Roles
+**Captain/Manager/Boss**
+**Role**: Expert Stock Analyst
+-**Responsibilities**: Oversees the entire stock analysis project.
+-**Goal**: Ensure the final report is accurate, comprehensive, and actionable.
+-**Backstory**: Experienced stock analyst with a background in financial markets and data analysis.
+
+
+
+
+
