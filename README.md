@@ -62,7 +62,7 @@ After this, you will have a Python environment in which you can work.
 Develop a comprehensive stock analysis report that includes trend analysis, predictions, and investment recommendations.
 
 ### Key Roles
-**Captain/Manager/Boss**
+    **Captain/Manager/Boss**
 
 **Role**: Expert Stock Analyst
 - **Responsibilities**: Oversees the entire stock analysis project.
