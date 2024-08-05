@@ -110,3 +110,29 @@ class SECTools():
 
     response = requests.get(url, headers=headers)
     return response.text
+
+
+# This code defines a class called SECTools with tools to search and retrieve specific information from the latest 10-Q and 10-K forms filed by companies with the SEC (Securities and Exchange Commission). @tool("Search 10-Q form"): Registers the search_10q method as a tool named "Search 10-Q form".
+# def search_10q(data): Defines a method that takes a pipe-separated string (data) containing the stock ticker and a question.
+# Functionality:
+# Splits the input into stock and ask.
+# Queries the SEC API for the latest 10-Q filing for the given stock.
+# If a filing is found, it retrieves the link to the filing details and calls the __embedding_search method to get the answer to the question.
+# Returns the answer or an error message if no filing is found.
+# @tool("Search 10-K form"): Registers the search_10k method as a tool named "Search 10-K form".
+# def search_10k(data): Defines a method that takes a pipe-separated string (data) containing the stock ticker and a question.
+# Functionality:
+# Splits the input into stock and ask.
+# Queries the SEC API for the latest 10-K filing for the given stock.
+# If a filing is found, it retrieves the link to the filing details and calls the __embedding_search method to get the answer to the question.
+# Returns the answer or an error message if no filing is found.
+# Private Method: __embedding_search
+#   Downloads and parses the HTML content of the filing from the given URL.
+#   Uses the partition_html function to break the content into elements.
+#   Joins the elements into a single string.
+#   Splits the string into smaller chunks using CharacterTextSplitter.
+#   Creates a retriever using FAISS and OpenAIEmbeddings to find the most relevant chunks that answer the question.
+#   Returns the concatenated answers.
+# Private Method: __download_form_html
+#   Downloads the HTML content from the given URL using the specified headers to mimic a web browser request.
+# The SECTools class provides tools to search for specific information from the latest 10-Q and 10-K forms filed by companies. It uses the SEC API to retrieve the filings, downloads the HTML content of the filings, and then uses text processing and embedding search techniques to find and return the relevant information based on a user's query.

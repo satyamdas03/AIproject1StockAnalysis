@@ -81,3 +81,5 @@ if __name__ == "__main__":
     # Now you can use the agents as needed
     # Example: print details of the financial analyst agent
     print(financial_analyst_agent)
+
+# The code sets up a system for generating different types of agents specialized in financial analysis, research, and investment advising. Each agent is equipped with a set of tools to perform tasks related to their role. The environment variables are loaded from a .env file, allowing for secure configuration of API keys and other sensitive information.

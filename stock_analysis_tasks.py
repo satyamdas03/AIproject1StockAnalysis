@@ -91,3 +91,5 @@ class StockAnalysisTasks():
 
   def __tip_section(self):
     return "If you do your BEST WORK, I'll give you a $10,000 commission!"
+  
+# The StockAnalysisTasks class defines methods that create tasks for agents to perform various aspects of stock analysis. Each method returns a Task object with a detailed description of what the agent needs to do, ensuring a comprehensive and thorough analysis. The helper method __tip_section adds a motivational message to each task description.
