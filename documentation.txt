@@ -77,3 +77,32 @@ Tools for the Agents
 Folder: tools
 search_tools.py: Implements tools for searching and retrieving data from various sources.
 calculator_tools.py: Implements tools for performing financial calculations and statistical analysis.
+
+
+======================================================
+
+QUERIES TO BE ANSWERED:
+
+1. Which model is this project using to train and all like ANN, or CNN or something else?
+The project is not using traditional machine learning models like ANN (Artificial Neural Networks) or CNN (Convolutional Neural Networks). Instead, it leverages pre-existing AI tools and APIs to perform various tasks such as web scraping, financial calculations, and document analysis.
+
+2. Which model would be optimal to train the model and get the output and why?
+Given the nature of this project, which involves financial data analysis, market trend interpretation, and investment recommendations, a traditional machine learning model is not necessarily optimal. Instead, using pre-trained models and APIs like those provided by LangChain, SEC API, and other specific tools is more effective. These tools are designed to handle specific tasks like data scraping, document parsing, and embeddings for document similarity.
+
+If you were to incorporate a custom model, you might consider:
+
+Natural Language Processing (NLP) models for text analysis and summarization.
+Time Series Analysis models for financial trend prediction.
+Ensemble Models that combine multiple approaches for more robust predictions.
+3. Is this project using an LLM (Large Language Model)?
+Yes, the project utilizes LLMs through the LangChain library and specific tools like the YahooFinanceNewsTool and the custom agents defined in stock_analysis_agents.py. These tools and agents use pre-trained language models to perform tasks like summarizing web content, searching the internet, and analyzing financial documents.
+
+4. Can LLM be added to the project title of this project name?
+Yes, given that the project heavily relies on language models for various tasks, it is appropriate to include LLM in the project title. A possible name could be:
+
+"LLM-Powered Financial Analysis and Investment Advisor"
+
+This title reflects the use of Large Language Models in the project's functionality.
+
+Summary of the Project's Approach:
+The project leverages various pre-trained tools and APIs to perform its tasks, without the need for traditional machine learning models like ANN or CNN. The integration of LLMs through LangChain and specific financial analysis tools forms the core of the project's analytical capabilities.
