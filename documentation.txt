@@ -94,6 +94,7 @@ If you were to incorporate a custom model, you might consider:
 Natural Language Processing (NLP) models for text analysis and summarization.
 Time Series Analysis models for financial trend prediction.
 Ensemble Models that combine multiple approaches for more robust predictions.
+
 3. Is this project using an LLM (Large Language Model)?
 Yes, the project utilizes LLMs through the LangChain library and specific tools like the YahooFinanceNewsTool and the custom agents defined in stock_analysis_agents.py. These tools and agents use pre-trained language models to perform tasks like summarizing web content, searching the internet, and analyzing financial documents.
 
