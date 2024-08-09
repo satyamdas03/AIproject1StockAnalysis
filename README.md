@@ -119,6 +119,14 @@ The project utilizes LLMs through the LangChain library and specific tools like 
 
 ## THE PROJECT CAN BE CHANGED TO "LLM-Powered Financial Analysis and Investment Advisor"
 
+## SOME RESEARCH WORKS TO SUPPORT THE IDEAS OF THIS PROJECT
+
+1. **"A Multi-agent Q-learning Framework for Optimizing Stock Trading Systems"** by Jae Won Lee and Jangmin O. This paper explores the use of a multi-agent system combined with Q-learning techniques to optimize stock trading strategies. It emphasizes the integration of reinforcement learning to enhance decision-making in trading environments, aligning well with the project on using agents for stock analysis and recommendation​.
+link to the paper : [https://link.springer.com/chapter/10.1007/3-540-46146-9_16](url)
+
+2. **"Using Multi-agent Systems Simulations for Stock Market Predictions"** by Diana Dezsi, Emil Scarlat, and Iulia Mărieş. This study presents an agent-based simulation approach for predicting stock market trends. It highlights how different agents can represent various market participants and interact to simulate realistic market conditions, which can improve the accuracy of stock market predictions and analyses​.
+link to paper : [https://link.springer.com/chapter/10.1007/978-3-319-05458-2_6](url)
+
 ## SUMMARY
 The project leverages various pre-trained tools and APIs to perform its tasks, without the need for traditional machine learning models like ANN or CNN. The integration of LLMs through LangChain and specific financial analysis tools forms the core of the project's analytical capabilities.
 
