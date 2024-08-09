@@ -25,12 +25,3 @@ class CalculatorTools():
 # This code provides a simple calculator tool that can evaluate and return the result of mathematical expressions. The use of the eval function allows for flexibility in the types of operations that can be performed, including addition, subtraction, multiplication, and division.
 
 # Note: While eval is powerful, it can be dangerous if used with untrusted input, as it can execute arbitrary code. In a production environment, you should ensure that the input to eval is safe or consider using a safer alternative.
-
-
-
-
-
-
-
-
-
