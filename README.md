@@ -150,7 +150,7 @@ link to paper : [https://link.springer.com/chapter/10.1007/978-3-319-05458-2_6](
     -*The Filings Analysis*: to analyze the latest filings
     -*The Recommend Task*: to review and synthesize the analysis provided by the financial and research analysts
 
-5. Finally we are going to merge all the above functions of the agents, tools and tasks to run the code and the get the final output
+5. Finally we are going to merge all the above functions of the agents, tools and tasks to run the code and the get the final output.
 
 ## SUMMARY
 The project leverages various pre-trained tools and APIs to perform its tasks, without the need for traditional machine learning models like ANN or CNN. The integration of LLMs through LangChain and specific financial analysis tools forms the core of the project's analytical capabilities.
