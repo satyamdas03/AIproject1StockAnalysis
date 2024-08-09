@@ -1,4 +1,3 @@
-import json
 import os
 
 import requests
@@ -111,7 +110,6 @@ class SECTools():
 
     response = requests.get(url, headers=headers)
     return response.text
-
 
 # This code defines a class called SECTools with tools to search and retrieve specific information from the latest 10-Q and 10-K forms filed by companies with the SEC (Securities and Exchange Commission). @tool("Search 10-Q form"): Registers the search_10q method as a tool named "Search 10-Q form".
 # def search_10q(data): Defines a method that takes a pipe-separated string (data) containing the stock ticker and a question.
