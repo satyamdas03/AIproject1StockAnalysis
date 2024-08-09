@@ -127,6 +127,32 @@ link to the paper : [https://link.springer.com/chapter/10.1007/3-540-46146-9_16]
 2. **"Using Multi-agent Systems Simulations for Stock Market Predictions"** by Diana Dezsi, Emil Scarlat, and Iulia Mărieş. This study presents an agent-based simulation approach for predicting stock market trends. It highlights how different agents can represent various market participants and interact to simulate realistic market conditions, which can improve the accuracy of stock market predictions and analyses​.
 link to paper : [https://link.springer.com/chapter/10.1007/978-3-319-05458-2_6](url)
 
+
+## Explanation of the code 
+
+1. There are 3 agents : **Research Analyst Agent**, **Financial Analyst Agent**, **Investment Advisor Agent**, Stock Analysis Report 
+    -*The Financial Analyst Agent*: To impress all customers with the financial data and market analysis.
+    -*The Research Analyst Agent*: To being the best at gathering information, interpreting data and amazing the customer with it.
+    -*The Investment Advisor Agent*: To Impress the customers with full analyses over stocks and complete the investment recommendations.
+
+2. Each agent have some tools provided to work with it. These tools are being imported in the starting lines.
+
+3. There is a folder called **Tools** thats where all the tools exist. 
+    -*The Browser Tools*: will be used to scrape website content.
+    -*The Calculator Tools*: will be used to make any mathematical calculations.
+    -*The Search Tools*: will be used to search the internet.
+    -*The Sec Tool*: will be used to search 10Q forms.
+    -**YAHOO FINANCE NEWS TOOLS**: used to collect the latest finance news from the news tool.
+
+4. 
+
+
+
+
+
+
+
+
 ## SUMMARY
 The project leverages various pre-trained tools and APIs to perform its tasks, without the need for traditional machine learning models like ANN or CNN. The integration of LLMs through LangChain and specific financial analysis tools forms the core of the project's analytical capabilities.
 
