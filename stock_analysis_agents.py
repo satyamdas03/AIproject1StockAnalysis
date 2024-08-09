@@ -1,10 +1,14 @@
 import os
-from dotenv import load_dotenv
 from crewai import Agent
+
+from dotenv import load_dotenv
+
+
 from tools.browser_tools import BrowserTools
 from tools.calculator_tools import CalculatorTools
 from tools.search_tools import SearchTools
 from tools.sec_tools import SECTools
+
 from langchain.tools.yahoo_finance_news import YahooFinanceNewsTool
 
 # Load environment variables from .env file
