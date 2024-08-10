@@ -1,4 +1,3 @@
-# to browse the internet
 import json
 import os
 
